@@ -12,7 +12,9 @@ import {
   ScrollView,
   ActivityIndicator
 } from 'react-native';
-import { FileSystem,Camera,Permissions } from 'expo';
+import * as FileSystem from 'expo-file-system';
+import * as Permissions from 'expo-permissions';
+import { Camera } from 'expo-camera';
 import ImageTile from './ImageTile';
 const { width } = Dimensions.get('window')
 
